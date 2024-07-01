@@ -26,7 +26,7 @@ frame_count = 0
 while cap.isOpened():
     success , frame = cap.read()
     if not success:
-        print("LOL you fucked up")
+        print("something Wrong")
         break
 
     tracks = model.track(frame , persist= True , iou = 0.2) # this make the object tracking happen botSort is for multi-trackng at the cost of computational power
