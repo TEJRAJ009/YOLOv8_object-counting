@@ -40,6 +40,7 @@ while cap.isOpened():
 
     # Break the loop when '.q' key is pressed
     # if cv2.waitKey(1) & 0xFF == ord('q'):
+
     #     break
 
 
