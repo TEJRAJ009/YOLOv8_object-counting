@@ -7,7 +7,7 @@ output_vid = 'output.avi'
 #init
 model = YOLO(path_model)
 
-#initalize Object Conter
+#initalize Object Conter.
 
 counter = solutions.ObjectCounter(
     view_img= True,
