@@ -22,7 +22,7 @@ assert cap.isOpened() , "Error in input"
 
 video_write = cv2.VideoWriter(output_vid, cv2.VideoWriter_fourcc(*"mp4v"),30,(1080,1920))
 
-frame_count = 0
+frame_count = 0  
 while cap.isOpened():
     success , frame = cap.read()
     if not success:
@@ -37,7 +37,7 @@ while cap.isOpened():
      # Display the frame
     #cv2.imshow('Frame', frame)
 
-    # Break the loop when 'q' key is pressed
+    # Break the loop when '.q' key is pressed
     # if cv2.waitKey(1) & 0xFF == ord('q'):
     #     break
 
