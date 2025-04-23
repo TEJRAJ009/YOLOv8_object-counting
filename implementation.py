@@ -45,4 +45,5 @@ while cap.isOpened():
 
 cap.release()
 video_write.release()
+
 cv2.destroyAllWindows()
