@@ -29,6 +29,7 @@ while cap.isOpened():
         print("something Wrong")
         break
 
+
     tracks = model.track(frame , persist= True , iou = 0.2) # this make the object tracking happen botSort is for multi-trackng at the cost of computational power
 
     frame = counter.start_counting(frame , tracks)
@@ -41,6 +42,8 @@ while cap.isOpened():
     # if cv2.waitKey(1) & 0xFF == ord('q'):
     #     break
 
+
 cap.release()
 video_write.release()
+
 cv2.destroyAllWindows()
