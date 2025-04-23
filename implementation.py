@@ -42,6 +42,7 @@ while cap.isOpened():
     # if cv2.waitKey(1) & 0xFF == ord('q'):
     #     break
 
+
 cap.release()
 video_write.release()
 cv2.destroyAllWindows()
